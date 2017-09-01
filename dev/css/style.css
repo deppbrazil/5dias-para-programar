@@ -1,53 +1,32 @@
 body {
-
-	background-color: #EEEEEE;
-	margin: 0;
+    background-color: #EEEEEE;
+    margin: 0;
 }
-
-
 
 #primeira {
-
-	background-color: #FFFFFF;
-	height: 80px;
-	border-bottom: 1px solid #CCCCCC;
+    background-color: #FFFFFF;
+    height: 80px;
+    border-bottom: 1px solid #CCCCCC;
 }
-
-
 
 #primeira #logo {
-
-	margin-top: 23px;
-	height: 35px;
+    margin-top: 23px;
+    height: 35px;
 }
-
-
 
 #primeira #topo {
-
-	width: 700px;
-	height: auto;
-	margin: auto;
-	
+    width: 700px;
+    height: auto;
+    margin: auto;
 }
-
 
 .post {
-	background-color: #FFFFFF;
-	width: 500px;
-	height: 500px;
-	margin: auto;
-	margin-top: 30px;
-	border: 1px solid #CCCCCC;
-
+    background-color: #FFFFFF;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    margin-top: 30px;
+    border: 1px solid #CCCCCC;
 }
-
-
-
-
-
-
-
-
 
 

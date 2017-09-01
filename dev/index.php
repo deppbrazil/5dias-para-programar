@@ -17,19 +17,28 @@
 
 	<!-- post -->
 	<div class="area">
-		<div class="post">
-			<img src="assets/foto1.jpg" width="100%">
-		</div>
 
-		<div class="post">
-			<img src="assets/foto2.jpg" width="100%">
-		</div>
+	<?php
+		$pdo = new PDO("mysql:dbname=instagram;host=localhost", "root", "");
 
-		<div class="post">
-			<img src="assets/foto3.jpg" width="100%">
-		</div>
+		$sql = $pdo->query("SELECT * FROM fotos");
+
+			if($sql->rowCount() > 0) {
+
+				foreach($sql->fetchAll() as $item) {
+				?>
+					<div class="post"> 
+						<img src="assets/<?php echo $item['url']?>" style="width:100%"/>
+					</div>
+				<?php
+			}
+		}
+	?>
+
 	</div>
-<!-- post -->
+	<!-- post -->
+
+
 
 </body>
 </html>
