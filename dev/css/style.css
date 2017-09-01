@@ -29,4 +29,24 @@ body {
     border: 1px solid #CCCCCC;
 }
 
+#lightbox-fundo {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.8);
+	display: none;
+}
 
+#lightbox-foto {
+	position: absolute;
+	width: 500px;
+	height: 500px;
+	background-color: #fff;
+	left: 50%;
+	top: 50%;
+	margin-left: -250px;
+	margin-top: -250px;
+	display: none;
+}

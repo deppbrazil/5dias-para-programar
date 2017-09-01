@@ -28,7 +28,7 @@
 				foreach($sql->fetchAll() as $item) {
 				?>
 					<div class="post"> 
-						<img src="assets/<?php echo $item['url']?>" style="width:100%"/>
+						<img onclick="abreLightbox(this)" src="assets/<?php echo $item['url']?>" style="width:100%"/>
 					</div>
 				<?php
 			}
@@ -38,7 +38,27 @@
 	</div>
 	<!-- post -->
 
+	<div id="lightbox-fundo" onclick="fechaLightbox()"></div>
+	<div id="lightbox-foto" onclick="fechaLightbox()"></div>
 
+	<script type="text/javascript">
+		
+		function abreLightbox(obj) {
+			//alert("Ok!");
+			document.body.scrollTop = 0;
+			document.getElementById("lightbox-fundo").style.display = "block";
+			document.getElementById("lightbox-foto").style.display = "block";
+
+			var img = obj.getAttribute("src");
+			document.getElementById("lightbox-foto").innerHTML = "<img src='"+img+"' width='100%' />";
+		}
+
+		function fechaLightbox() {
+			document.getElementById("lightbox-fundo").style.display = "none";
+			document.getElementById("lightbox-foto").style.display = "none";			
+		}
+
+	</script>
 
 </body>
 </html>
