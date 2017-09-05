@@ -50,3 +50,12 @@ body {
 	margin-top: -250px;
 	display: none;
 }
+
+.formulario {
+	width: 500px;
+	height: 100px;
+	margin: auto;
+	border: 1px dotted #CCCCCC;
+	margin-top: 20px;
+	padding: 10px;
+}
